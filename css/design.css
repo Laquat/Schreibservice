@@ -1,0 +1,233 @@
+* {
+    margin: 	0;
+    padding: 	0;
+}
+html, body {
+	background-color:	gray;
+	background-color:	hsla(0, 0%, 20%, 1);
+	font-size:			62.5%;
+}
+#wrapper {
+	max-width:			780px;
+	max-height:			100%;
+	margin:				2px auto;	
+}
+header {
+	position: 			relative;
+	top: 				0.5em;
+	width:				780px;
+	max-width: 			100%;
+	z-index: 			1;
+	height: 			24em;
+}
+#kopf {
+	height:						71%;
+	width:						100%;
+	text-align:					center;
+	background-color:			white;
+	border-top-left-radius: 	2em;
+	border-top-right-radius: 	2em;
+}
+#kopf img {
+	display: 			inline;
+	position:			relative;
+	height:				90%;
+	top:				50%;
+	margin:				auto;
+}
+
+#loginmenue {
+	position:			relative;
+	height: 			11%;
+	width:				100%;
+	background-color:	#c0a698;	
+	text-align:			right;
+}
+.vertikalalign {
+	display: 			block;
+	position:			relative;
+	-moz-transform:		translateY(-50%); /* Firefox 3.6 Firefox 4 */
+	-webkit-transform:	translateY(-50%); /* Safari */
+	-o-transform:		translateY(-50%); /* Opera */
+	-ms-transform:		translateY(-50%); /* IE9 */
+	transform:			translateY(-50%); /* W3C */
+}
+#loginmenue ul {
+	top:				50%;
+	right: 				0;
+	list-style:			none;
+	margin-right:		1em;
+}
+#loginmenue li {
+	font-size: 			2em;
+	font-family:		calibri;
+	font-weight:		lighter;
+	letter-spacing: 	0em;
+	padding-left:		0.25em;
+	display:			inline;	
+}
+#hauptmenue {
+	position:			relative;
+	height:				18%;
+	width:				100%;
+	background-color:	white;
+	border-bottom-left-radius: 		1em;
+	border-bottom-right-radius: 	1em;
+}
+#hauptmenue ul {
+	top:				50%;
+	list-style:			none;
+	width: 				100%;
+	text-align:			center;	
+}
+#hauptmenue li {
+	font-size: 			2.5em;
+	font-family:		calibri;
+	font-weight:		lighter;
+	letter-spacing: 	0em;
+	margin-left:		1em;
+	padding-left:		0.5em;
+	padding-right:		0.5em;
+	display:			inline;
+}
+#hauptmenue a {
+	width: 20px;
+}
+main {
+	margin-top: 1em;
+	width:		100%;
+	text-align: center;
+	font-family: calibri;
+}
+#bild img {
+	position: 	relative;
+	display:	block;
+	width: 		100%;
+	border-top-left-radius: 	1em;
+	border-top-right-radius: 	1em;
+}
+.zwischenbox{
+	position: 			relative;
+	height: 			3em;
+	width:				100%;
+	border-style:		none;
+	background-color:	#0f2a4f;
+	background-color:				#2F4D6A;
+	background-color:				hsl(210, 38%, 30%);
+	
+}
+#zwischenbox2 {
+	border-top-left-radius: 	1em;
+	border-top-right-radius: 	1em;
+}
+section h1 {
+	font-size: 		4em;
+	font-family: 	calibri;
+	font-weight: 	300;
+	color: 			#0f2a4f;
+}
+section p {
+	font-size:	1.8em;
+	text-align: center;
+	width:		50%;
+	margin: 	1.5em auto;
+}
+.section_size {
+	height:		60em;
+}
+#schreibservice {
+	background-color: 	white;
+	height: 			80em;
+	border-top-left-radius: 	2em;
+	border-top-right-radius: 	2em;
+}
+#schreibbuero {
+	background-color: 	#c0a698;
+}
+#preise {
+	background-color: 	white;
+}
+#service {
+	background-color: 	#c0a698;
+}
+#kontakt {
+	background-color: 	white;
+}
+#datenschutz{
+	background-color: 	white;
+}
+#impressum {
+	background-color: 	#c0a698;
+}
+#agb {
+	background-color: 	white;
+}
+#login {
+	background-color: 			white;
+	border-top-left-radius: 	2em;
+	border-top-right-radius: 	2em;
+	height:						80em;
+}
+#registrierung {
+	background-color: 	#c0a698;
+}
+#upload {
+	background-color: 	white;
+}
+#verwaltung {
+	background-color: 	#c0a698;
+}
+footer {
+	height:				18em;
+	margin-bottom:		2em;
+}
+#fussklein {
+	height:				15%;
+	background-color:	#c0a698;
+}
+#fussgross {
+	height:				65%;
+	background-color: 	#0f2a4f;
+}
+#fusszeilenmenue {
+	height: 						20%;
+	width:							100%;
+	background-color:				#2F4D6A;
+	background-color:				hsl(210, 38%, 30%);	
+	text-align:						center;
+	border-bottom-left-radius: 		2em;
+	border-bottom-right-radius: 	2em;
+}
+#fusszeilenmenue ul {
+	top:				50%;
+	list-style:			none;
+}
+#fusszeilenmenue li {
+	font-size: 						2em;
+	font-family:					calibri;
+	font-weight:					lighter;
+	letter-spacing: 				0em;
+	padding-left:					0.5em;
+	display:						inline;	
+}
+#hauptmenue a:link 	{ 	color: black; text-decoration: none;}
+#hauptmenue a:visited { 	color: black; text-decoration: none;}
+#hauptmenue a:focus { 	color: #0f2a4f; border-top: 1px solid #0f2a4f; 
+						border-bottom: 1px solid;}
+#hauptmenue a:hover { 	color: #0f2a4f; border-top: 1px solid;
+						border-bottom: 1px solid; border-color: #0f2a4f;}
+#hauptmenue a:active {	color: orange; 	text-decoration: none;}
+
+#loginmenue a:link 	{ 	color: white; 	text-decoration: none;}
+#loginmenue a:visited { 	color: white;	text-decoration: none;}
+#loginmenue a:focus { 	color: #0f2a4f;	font-weight: 600;}
+#loginmenue a:hover { 	color: #0f2a4f; font-weight: 600;}
+#loginmenue a:active { 	color: orange; 	text-decoration: none;}
+
+#fusszeilenmenue a:link 	{ 	color: white; 	text-decoration: none;}
+#fusszeilenmenue a:visited { color: white;	text-decoration: none;}
+#fusszeilenmenue a:focus { 	color: white;	border-top:	1px solid white;
+							border-bottom: 1px solid;}
+#fusszeilenmenue a:hover { 	color: white; border-top:	1px solid;
+							border-bottom: 1px solid; border-color:	white;}
+#fusszeilenmenue a:active { 	color: orange; 	text-decoration: none;}
