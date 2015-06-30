@@ -231,3 +231,13 @@ footer {
 #fusszeilenmenue a:hover { 	color: white; border-top:	1px solid;
 							border-bottom: 1px solid; border-color:	white;}
 #fusszeilenmenue a:active { 	color: orange; 	text-decoration: none;}
+
+.fixed {
+    top:0;
+    left:0;
+    position:fixed;        
+}
+
+#my_fixable_table_header{
+ display: block;   
+}
