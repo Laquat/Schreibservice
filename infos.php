@@ -1,11 +1,29 @@
-<?php
-include "header.php";
-?>
-	<nav id="loginmenue">
-			<ul class="vertikalalign">
-					<li><a href="index.php"><img id="pfeil" src="images/pfeil.gif" alt="zurück"> Homepage</a></li>
-			</ul>
-	</nav>
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Schreibservice Dick</title>
+
+<html lang="de">
+<meta charset="UTF-8">
+<meta http-equiv="content-type" content="text/html"; charset="UTF-8">
+<meta name="robots" content="index, follow">
+<meta name="author" content="WPFMW Projektgruppe">
+<meta name="creator" content="WPFMW Projektgruppe">
+<meta name="publisher" content="WPFMW Projektgruppe">
+<meta name="description" content="Hier kommt die Beschreibung rein">
+
+<link href="css/design.css" type="text/css" rel="stylesheet" title"Haupttemplate">
+
+</head>
+<body>
+<div id="wrapper">
+<header class="shadow">
+	<div id="kopf">
+		<a href="index.php"><img class="vertikalalign" src="images/logo.jpg" alt="Logo"></a>
+	</div>
+	<div id="oberbox">
+	</div>
 	<nav id="hauptmenue">
 		<ul class="vertikalalign">
 			<li><a href="infos.php#datenschutz">Datenschutz</a></li>
@@ -44,6 +62,18 @@ include "header.php";
 		</article>
 	</section>
 </main>
-<?php
-include "footer.php";
-?>
+<footer>
+	<div id="fussklein"></div>
+	<div id="fussgross"></div>
+	<nav id="fusszeilenmenue">
+		<ul class="vertikalalign">
+			<li><a href="infos.php#datenschutz">Datenschutz</a></li>
+			<li><a href="infos.php#impressum">Impressum </a></li>
+			<li><a href="infos.php#agb">AGB</a></li>
+		</ul>
+	</nav>
+</footer>
+</div>
+
+</body>
+</html>
