@@ -40,7 +40,16 @@
 <main>
 	<section class="section_size" id="schreibbuero">
 		
-			<div class="fotorama" data-width="100%" data-height="50%" data-fit="cover" data-ratio="800/600">
+			<div class="fotorama" 
+			data-width="100%" 
+			data-height="50%" 
+			data-fit="cover" 
+			data-ratio="800/600"
+			data-allowfullscreen="true"
+			data-loop="true"
+			data-autoplay="true"
+			data-keyboard="true">
+				<img src="images/schreibbuero.jpg">
 				<img src="http://s.fotorama.io/1.jpg">
 				<img src="http://s.fotorama.io/2.jpg">
 			</div>
