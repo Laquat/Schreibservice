@@ -29,7 +29,7 @@
 	</div>
 	<nav id="hauptmenue">
 		<ul class="vertikalalign">
-			<li><a href="index.php#schreibbuero">Schreibbüro</a></li>
+			<li><a href="index.php#schreibbuero_info">Schreibbüro</a></li>
 			<li><a href="index.php#service">Service</a></li>
 			<li><a href="index.php#preise">Preise</a></li>
 			<li><a href="index.php#ueberuns">Über uns</a></li>
@@ -40,7 +40,7 @@
 <main>
 	<section class="section_size" id="schreibbuero">
 		
-			<div class="fotorama" data-width="100%" data-height="50%" data-fit="cover">>
+			<div class="fotorama" data-width="100%" data-height="50%" data-fit="cover" data-ratio="800/600">
 				<img src="http://s.fotorama.io/1.jpg">
 				<img src="http://s.fotorama.io/2.jpg">
 			</div>
@@ -56,6 +56,8 @@
 				<a href="einloggen.php">einloggen</a>
 				</div></a>
 			</div>
+	</section>
+	<section class="section_size" id="schreibbuero_info">
 		<article>
 			<h1>Schreibbuero ANNA DICK</h1>
 			<p>Wenn die Sonne nicht scheint und es kalt und grau draußen ist, dann

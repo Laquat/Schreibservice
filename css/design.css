@@ -79,10 +79,10 @@ main {
 	text-align: 				center;
 	font-family: 				calibri;
 }
-bild {
-	data-width="100%"; 
-	data-height="50%";
-	data-fit="cover";
+bild{
+	position: 	relative;
+	display:	block;
+	data-width= "100%"
 }
 .zwischenbox{
 	position: 			relative;
@@ -139,12 +139,13 @@ section p {
 }
 #schreibbuero {
 	background-color: 			white;
-	height: 					140em;
+	height: 					110em;
 }
-#schreibbuero article {
-	margin:		20em auto;
+#schreibbuero_info{
+	background-color: 			white;
 
 }
+
 #service {
 	background-color: 	#c0a698;
 }
