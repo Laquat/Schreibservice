@@ -14,7 +14,9 @@
 <meta name="description" content="Hier kommt die Beschreibung rein">
 
 <link href="css/design.css" type="text/css" rel="stylesheet" title"Haupttemplate">
-
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<link  href="fotorama/fotorama.css" rel="stylesheet">
+<script src="fotorama/fotorama.js"></script>
 </head>
 <body>
 <div id="wrapper">
@@ -37,9 +39,13 @@
 </header>
 <main>
 	<section class="section_size" id="schreibbuero">
-		<div id="bild">
-			<img src="images/schreibbuero.jpg" alt="Schreibbüro">
-		</div>
+		
+			<div class="fotorama" data-width="100%" data-height="50%" data-fit="cover">>
+				<img src="http://s.fotorama.io/1.jpg">
+				<img src="http://s.fotorama.io/2.jpg">
+			</div>
+		
+		
 		<div class="zwischenbox" id ="zwischenbox"></div>
 			<div id="loginmenue">
 				<div id="neuanmelden">

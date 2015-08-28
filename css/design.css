@@ -79,10 +79,10 @@ main {
 	text-align: 				center;
 	font-family: 				calibri;
 }
-#bild img {
-	position: 	relative;
-	display:	block;
-	width: 		100%;
+bild {
+	data-width="100%"; 
+	data-height="50%";
+	data-fit="cover";
 }
 .zwischenbox{
 	position: 			relative;
