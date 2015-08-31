@@ -28,11 +28,15 @@
 <main>
 <br><h1>Neu Anmelden</h1><br><br>
 <div id="anmeldeformular">
-<form action="index.php" method="post">
+<form action="reg.php" method="post">
 	<label>Name/Firma</label>
 	&nbsp;<input class="textinput" type="text" name="name" value=""/>
 	<br><br><label>Email</label>
 	<input class="textinput" type="text" name="email" value=""/>	
+    <br><br><label>Passwort</label>
+	<input class="textinput" type="password" name="passwort1" value=""/>
+    <br><br><label>Passwort</label>
+	<input class="textinput" type="password" name="passwort2" value=""/>
 	<br><br><br>
 	<span>Schon angemeldet? Hier <i><a href="einloggen.php">einloggen</a></i></span>
 	<input class="submit" type="submit" value="weiter">

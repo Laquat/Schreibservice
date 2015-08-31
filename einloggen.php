@@ -28,9 +28,9 @@
 <main>
 <br><h1>Einloggen</h1><br><br>
 <div id="anmeldeformular">
-<form action="index.php" method="post">
-	<label>Name/Firma</label>
-	&nbsp;<input class="textinput" type="text" name="name" value=""/>
+<form action="login.php" method="post">
+	<label>Email</label>
+	&nbsp;<input class="textinput" type="text" name="email" value=""/>
 	<br><br><label>Passwort</label>
 	<input class="textinput" type="password" name="passwort" value=""/>	
 	<br><br><br><input class="submit" type="submit" value="weiter">
