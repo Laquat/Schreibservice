@@ -17,7 +17,23 @@
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <link  href="fotorama/fotorama.css" rel="stylesheet">
 <script src="fotorama/fotorama.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<link rel="stylesheet" type="text/css" href="css/jquery.calculator.css"> 
+<script type="text/javascript" src="js/jquery.plugin.js"></script> 
+<script type="text/javascript" src="js/jquery.calculator.js"></script>
 
+<script>
+  $(document).ready(function(){  
+    $('#defaultCalc').calculator(); 
+ 
+    $('#removeCalc').click(function() { 
+        var destroy = $(this).text() === 'Remove'; 
+        $(this).text(destroy ? 'Re-attach' : 'Remove'); 
+        $('#defaultCalc').calculator(destroy ? 'destroy' : {}); 
+    });
+ });
+    
+</script>
     
 </head>
 <body>
@@ -36,6 +52,8 @@
 			<li><a href="index.php#preise">Preise</a></li>
 			<li><a href="index.php#ueberuns">Über uns</a></li>
 			<li><a href="index.php#kontakt">Kontakt</a></li>
+            <li><a href="index.php#rechner">Rechner</a></li>
+            <li><a href="index.php#map">Map</a></li>
 		</ul>
 	</nav>
 </header>
@@ -120,6 +138,35 @@
 				kann es uns schon schwer fallen uns zu freuen. Wir haben wieder viel zu
 				viele Rechnungen zu zahlen und viel zu wenig Geld und wir werden
 				unzufrieden und lassen uns von solchen dingen runterziehen.</p>
+		</article>
+	</section>
+    <section class="section_size" id="rechner">
+        <article>
+			<br><br><br><br><br><br><br><br><h1>Rechner</h1>
+			<p>
+            <span class="demoLabel">Rechner:</span>
+			<input type="text" id="defaultCalc" class="">&nbsp;
+			<button type="button" id="removeCalc">Deaktivieren</button>
+            </p>
+		</article>
+	</section>
+      <section class="section_size" id="map">
+        <article>
+			<br><br><br><br><br><br><br><br>
+			 <script type="text/javascript">
+
+                var map;
+                function initMap() {
+                  map = new google.maps.Map(document.getElementById('map'), {
+                    center: {lat: 51.0333, lng: 7.55},
+                    zoom: 14
+                  });
+                }
+
+            </script>
+            <script async defer
+               src="https://maps.googleapis.com/maps/api/js?key=AIzaSyADfGiAIwPsCpsAv5bguNXf2REK-Y0XHWc&callback=initMap">
+            </script>
 		</article>
 	</section>
 </main>
