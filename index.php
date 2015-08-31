@@ -51,11 +51,20 @@
 			data-loop="true"
 			data-autoplay="true"
 			data-keyboard="true">
-				<img src="images/schreibbuero.jpg">
-				<img src="http://s.fotorama.io/1.jpg">
-				<img src="http://s.fotorama.io/2.jpg">
-			</div>
-		
+                <?php
+                    $ordner = "images/gallerie";
+                    $allebilder = scandir($ordner);  
+                    foreach ($allebilder as $bild) {
+                        $bildinfo = pathinfo($ordner."/".$bild); 
+                        if ($bild != "." && $bild != "..") { 
+                ?>
+                <img src="<?php echo $bildinfo['dirname']."/".$bildinfo['basename'];?>" />
+                <?php
+                        };
+                     };
+                ?>
+            </div>
+		      
 		
 		<div class="zwischenbox" id ="zwischenbox"></div>
 			<div id="loginmenue">

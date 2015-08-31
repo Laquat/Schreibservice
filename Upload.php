@@ -78,41 +78,56 @@ session_start();
 			<h1>Eingelogt</h1>
 			
             
-            <?php 
-                $email = $_SESSION["email"];
+<?php
+        $target_dir = "images/gallerie";
+        $target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
+        $uploadOk = 1;
+        $imageFileType = pathinfo($target_file,PATHINFO_EXTENSION);
 
-                $verbindung = mysql_connect("localhost", "root" , "") 
-                or die("Verbindung zur Datenbank konnte nicht hergestellt werden"); 
-                mysql_select_db("schreibservice", $verbindung) or die ("Datenbank konnte nicht ausgewählt werden"); 
+        // Check if image file is a actual image or fake image
+        if(isset($_POST["submit"])) {
+            $check = getimagesize($_FILES["fileToUpload"]["tmp_name"]);
+            if($check !== false) {
+                echo "<p>Datei ist ein  - " . $check["mime"] . ".</p>";
+                $uploadOk = 1;
+            } else {
+                echo "<p>Datei ist kein Bild.</p>";
+                $uploadOk = 0;
+            }
+        }
 
-                $abfrage = "SELECT User_Type FROM `user` WHERE Email = '$email'"; 
-                $ergebnis = mysql_query($abfrage); 
-                $row = mysql_fetch_object($ergebnis); 
+        // Check if file already exists
+        if (file_exists($target_file)) {
+            echo "<p>Datei existiert bereits.</p>";
+            $uploadOk = 0;
+        }
 
-                if($row->User_Type == 1){ 
-                    
-                    echo'<p>Audio Upload steht noch nicht zur verfügung!</p>';
-                    
-                }
-                
-                if($row->User_Type == 3){ 
-
-                    echo'
-                    <p>Gallerie Bilder</p>
-                    <form action="upload.php" method="post" enctype="multipart/form-data">
-                    <p>Select image to upload:</p>
-                    <input type="file" name="fileToUpload" id="fileToUpload">
-                    <input type="submit" value="Bild Hochloaden" name="submit">
-                    </form>
-                    ';
-                    
-                }
-
-
-            ?>
+        // Check file size
+        if ($_FILES["fileToUpload"]["size"] > 500000) {
+            echo "<p>Das Bild ist zu groß.</p>";
+            $uploadOk = 0;
+        }
+        // Allow certain file formats
+        if($imageFileType != "jpg" && $imageFileType != "png" && $imageFileType != "jpeg"
+        && $imageFileType != "gif" ) {
+            echo "<p>Das Bild muss vom typ JPG, JPEG, PNG & GIF sein.</p>";
+            $uploadOk = 0;
+        }
+        // Check if $uploadOk is set to 0 by an error
+        if ($uploadOk == 0) {
+            echo "<p>Die Datei konnte nicht hochgeladen werden.</p>";
+        // if everything is ok, try to upload file
+        } else {
+            if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file)) {
+                echo "<p>Die Datei ". basename( $_FILES["fileToUpload"]["name"]). " ist hochgeladen.</p>";
+            } else {
+                echo "<p>Da ist etwas schief gelaufen versuche es bitte erneut.</p>";
+            }
+        }
+        echo "<p><br> <a href=\"profil.php\">Geschützer Bereich</a></p>";
+?>
             
-            
-		</article>
+            	</article>
 	</section>
 </main>
 <footer>

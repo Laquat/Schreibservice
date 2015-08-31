@@ -48,7 +48,7 @@ $row = mysql_fetch_object($ergebnis);
 
 if($row->Password == md5($passwort)) 
     { 
-    $_SESSION["email"] = $email; 
+    $_SESSION["email"] = $email;
     echo "Login erfolgreich. <br> <a href=\"profil.php\">Geschützer Bereich</a>"; 
     } 
 else 
